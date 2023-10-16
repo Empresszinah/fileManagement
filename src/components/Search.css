@@ -1,0 +1,30 @@
+.Search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .searchForm {
+    display: flex;
+    align-items: center;
+  }
+  
+  .searchForm label {
+    margin-right: 10px;
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  .searchForm input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  .searchForm input:focus {
+    border-color: #000;
+  }
+  

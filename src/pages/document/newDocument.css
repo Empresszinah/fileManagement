@@ -1,0 +1,86 @@
+/* Form */
+.form {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 1rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .form-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+
+  }
+  
+  .form-control:focus {
+    outline: none;
+    border-color: #555;
+  }
+  
+  /* Button */
+  .btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #555;
+    color: #fff;
+  }
+  
+  /* File upload */
+  .file-upload {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 1rem;
+  }
+  
+  .file-upload input[type="file"] {
+    display: none;
+  }
+  
+  .file-upload label {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+  }
+  
+  .file-upload label:hover {
+    background-color: #555;
+    color: #fff;
+  }
+  
+  /* Other styles */
+  body {
+    font-family: sans-serif;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+
+  

@@ -1,0 +1,54 @@
+/* Global styles */
+body {
+    font-family: sans-serif;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  
+  /* FileDetail component styles */
+  .file-detail {
+    padding: 1rem;
+    border: 1px solid #eee;
+    border-radius: 0.5rem;
+  }
+  
+  .file-detail h2 {
+    margin-top: 0;
+  }
+  
+  .file-detail p {
+    margin-bottom: 0.5rem;
+  }
+  
+  .file-detail form {
+    margin-top: 1rem;
+  }
+  
+  .file-detail label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .file-detail textarea,
+  .file-detail input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #eee;
+    border-radius: 0.25rem;
+  }
+  
+  .file-detail textarea {
+    height: 100px;
+  }
+  
+  .file-detail button {
+    margin-top: 1rem;
+    background-color: #008000;
+    color: #fff;
+    border-radius: 0.25rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  
