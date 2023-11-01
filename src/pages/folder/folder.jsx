@@ -32,8 +32,9 @@ const FolderPage = () => {
     }
   };
 
+
   return (
-    <div>
+    <div className='folder center-middle'>
       <h1>Folders and Files</h1>
 
       {/* Create Folder */}

@@ -4,7 +4,8 @@ import "./dashboard.css";
 
 const Dashboard = () => {
   return (
-    <div>
+    <div className="center-vw">
+   <div className='dashboard'>
       <h1>Welcome To Dashboard</h1>
       <div>
         <Search />
@@ -47,11 +48,12 @@ const Dashboard = () => {
           <h2 className="text-center font-medium text-5xl text-coolGray-900 tracking-tighter">
             38
           </h2>
-        </a>
-      </div>
-    </section>
-      </div>
-    </div>
+         </a>
+       </div>
+      </section>
+     </div>
+     </div>
+  </div>
   )
 }
 

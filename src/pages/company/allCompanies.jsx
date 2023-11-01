@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import "./allCompanies.css"
 
 const companiesData = [
   {
@@ -79,7 +80,7 @@ const companiesData = [
 
 const AllCompanies = () => {
   return (
-    <div>
+    <div className="center-list">
       <h1>All Companies</h1>
       <ul>
         {companiesData.map((company) => (
