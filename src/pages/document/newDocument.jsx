@@ -60,6 +60,18 @@ const UploadDocument = () => {
         }, []);
 
 
+        const [uploadDocument, setUploadDocument] = useState([])
+
+        useEffect(()=> {
+          async function fetchUsers() {
+          const response = await fetch('https://fileapp.onrender.com/user/all/users')
+          const resData = await response.json();
+          setUploadDocument(resData.users);
+          }
+          fetchUsers();
+        }, []);
+
+
 
   
 
@@ -205,7 +217,7 @@ const UploadDocument = () => {
                       id="assignTo" // Add an id for the label to reference
                       name='assignToID'
                       value={assignToID}
-                      onChange={handleChange}
+                      onChange={uploadDocument}
                     >
                       {/* Populate dropdown options with user data */}
                       <option value="">Select Assignee</option>

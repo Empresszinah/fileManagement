@@ -7,7 +7,6 @@ import NewDocument from './pages/document/newDocument.jsx';
 import Folder from './pages/folder/folder.jsx';
 import OfficialAssignment from './pages/official/officialAssignment.jsx';
 import Task from './pages/task/task.jsx';
-// import LandingPage from './pages/homePages/LandingPage.jsx';
 import CompanyDetail from './pages/company/CompanyDetail.jsx'; 
 import FileDetail from './pages/company/FileDetail.jsx'; 
 import Login from './components/accessPages/Login.jsx';
@@ -16,16 +15,12 @@ import './App.css';
 
 
 
-
-
 const App = () => {
 
   return (
+    <>
       <Sidebar>
         <Routes>
-          <Route path="/" element={<SignUp />} />
-          <Route path="/login" element={<Login />} />
-          {/* <Route path="/signup" element={<SignUp />} /> */}
           <Route path="/allCompanies" element={<AllCompanies />} />
           <Route path="/folder" element={<Folder />} />
           <Route path="/newDocument" element={<NewDocument />} />
@@ -36,6 +31,11 @@ const App = () => {
           <Route path="/company/:companyId/file/:fileId" element={<FileDetail />} />
         </Routes>
       </Sidebar>
+      <Routes>
+          <Route path="/" element={<SignUp />} />
+          <Route path="/login" element={<Login />} />
+     </Routes>
+      </>
   );
 };
 

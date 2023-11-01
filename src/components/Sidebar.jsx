@@ -8,7 +8,8 @@ import {
     FaShoppingBag,
     FaThList
 }from "react-icons/fa";
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
+import "./Sidebar.css";
 
 
 const Sidebar = ({children}) => {
@@ -62,8 +63,13 @@ const Sidebar = ({children}) => {
             icon:<FaThList/>
         }
     ]
+
+      const location = useLocation();
+      const path = location.pathname;
+      const hideDashboard = path ==='/'||path==='/login'
+
     return (
-        <div className="container">
+        <div className={`${hideDashboard?'container-hidden':'container'}`}>
            <div style={{width: isOpen ? "200px" : "50px"}} className="sidebar">
                <div className="top_section">
                    <h1 style={{display: isOpen ? "block" : "none"}} className="logo">Logo</h1>
